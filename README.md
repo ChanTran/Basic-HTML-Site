@@ -5,6 +5,6 @@ Information is lacking, just testing a few concepts such as forms, adding moving
 
 ![Home Page](https://i.imgur.com/XnwVuoJ.png)
 
-![Menu](https://i.imgur.com/qo0TMax.png
+![Menu](https://i.imgur.com/qo0TMax.png)
 
 ![About Us](https://i.imgur.com/aH8ut7b.png)
