@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Reading Steakhouse Family Restaurant</title>
+    <!--
+      Chan Le
+      Email: chan.le001@albright.edu
+    -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="CL_styles.css">
+  </head>
+  
+  <body>
+    <div class="container">
+      <header id="menubar">
+        <div class="logo">
+          <a href="CL_mainpage.html">
+            <img src="logo.png" width="200" height="200"/>
+          </a>
+        </div>
+        <ul class="navLeftSide">
+          <li><a href="CL_menu.html">Menu</a></li>
+          <li><a href="CL_aboutus.html">About Us</a></li>
+        </nav>
+        <ul class="navRightSide">
+          <li><a href="https://goo.gl/maps/MBX7FqKAWWBT7B4A7">Location and Hours</a></li>
+          <li><a href="">Contact Us</a></li>
+        </nav>
+      </header>
+    </div>
+    
+    <div class="contactImage">
+      <h1>Contact Us</h1>
+    </div>
+    
+    <article>
+      <div class="contactInfo">
+        <h2>Contact Methods</h2>
+        <p>You can contact us through any of the methods right below, or you can fill out the form at the bottom!</p>
+        <table>
+          <tbody>
+            <tr>
+              <td><b>Email:<b></td>
+              <td>placeholder@domain.com</td>
+            </tr>
+            <tr>
+              <td><b>Phone Number:<b></td>
+              <td>(610) 555-2255</td>
+            </tr>
+            <tr>
+              <td><b>Fax:<b></td>
+              <td>placeholder-fax-number</td>
+            </tr>
+            <tr>
+              <td colspan="2">Or contact us in the house!</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      
+      <div class="survey">
+        <h2>Feedback/Questions</h2>
+        <form action="results.html">
+          <fieldset class="subjectInfo">
+            <legend>Subject</legend>
+            <label for="question">
+              <input type="radio" id="question" name="subject" value="Question">Question
+            </label>
+            <label for="feedback">
+              <input type="radio" id="feedback" name="subject" value="Feedback">Feedback
+            </label>
+            <label for="inquiry">
+              <input type="radio" id="inquiry" name="subject" value="Inquiry">Inquiry
+            </label>
+            <label for="other">
+              <input type="radio" id="other" name="subject" value="Other">Other
+            </label>
+          </fieldset>
+          <fieldset class="topic">
+            <legend>Topic</legend>
+            <label for="topic">
+            </label>
+            <select id="topic" name="topic">
+              <option value="01">I want dynamic topics to be displayed based off of the first choice above</option>
+              <option value="02">Filler</option>
+            </select>
+          </fieldset>
+          <fieldset class="contactForm">
+            <legend>Contact Information</legend>
+            <label for="firstname">First Name
+              <input type="text" id="firstname" name="name" placeholder="First name">
+            </label>
+            <label for="lastname">Last Name
+              <input type="text" id="lastname" name="name" placeholder="Last name">
+            </label>
+            <label for="emailinput">Email
+              <input type="email" id="emailinput" name="email" placeholder="email@domain.com">
+            </label>
+            <label for="phoneinput">Phone
+              <input type="number" id="phoneinput" name="phone">
+            </label>
+          </fieldset>
+          <fieldset class="additionalInfo">
+            <legend>Inquiry/Information</legend>
+            <label for="additional">
+              <textarea id="additional" name="additional" rows="6">
+              </textarea>
+            </label>
+          </fieldset>
+          
+          <fieldset class="contactPref">
+            <legend>Contact preference</legend>
+            <label for="emailAdd">Email
+              <input type="checkbox" id="emailAdd" value="Email" name="pref">
+            </label>
+            <label for="phoneNum">Phone
+              <input type="checkbox" id="phoneNum" value="Phone" name="pref">
+            </label>
+          </fieldset>
+              
+          <fieldset class="submitbutton">
+            <input type="submit" id="submit" value="Submit">
+          </fieldset>
+        </form>
+      </div>
+      
+    </article>
+    
+    <footer>
+      <img src="logo.png" width="200" height="200"/>
+      <div class="footerRight">
+        <p>Reading Steakhouse</p>
+        <p>1621 N 13th St.</p>
+        <p>Reading, PA 19604</p>
+        <p>(610) 555&ndash;2255</p>
+      </div>
+    </footer>
+    <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="menuJS.js"></script>
+  </body>
+</html>

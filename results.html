@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Reading Steakhouse Family Restaurant</title>
+    <!--
+      Chan Le
+      Email: chan.le001@albright.edu
+    -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="CL_styles.css">
+  </head>
+  
+  <body>
+    <div class="container">
+      <header id="menubar">
+        <div class="logo">
+          <a href="CL_mainpage.html">
+            <img src="logo.png" width="200" height="200"/>
+          </a>
+        </div>
+        <ul class="navLeftSide">
+          <li><a href="CL_menu.html">Menu</a></li>
+          <li><a href="CL_aboutus.html">About Us</a></li>
+        </nav>
+        <ul class="navRightSide">
+          <li><a href="https://goo.gl/maps/MBX7FqKAWWBT7B4A7">Location and Hours</a></li>
+          <li><a href="CL_contact.html">Contact Us</a></li>
+        </nav>
+      </header>
+    </div>
+    
+    <article id="contentstart">
+      <h2>Your form has been submitted</h2>
+      <h3>You entered the following data:</h3>
+         
+               <script>
+                   var formData = location.search;
+                   formData = formData.substring(1, formData.length);
+                   while (formData.indexOf("+") !== -1) {
+                      formData = formData.replace("+", " ");
+                   }
+                   formData = decodeURIComponent(formData);
+                   var formArray = formData.split("&");
+                   for (var i = 0; i < formArray.length; i = i + 1) {
+                      document.write("<p>" + formArray[i] + "</p>");
+                   }
+               </script>
+    </article>
+    
+    <footer>
+      <img src="logo.png" width="200" height="200"/>
+      <div class="footerRight">
+        <p>Reading Steakhouse</p>
+        <p>1621 N 13th St.</p>
+        <p>Reading, PA 19604</p>
+        <p>(610) 555&ndash;2255</p>
+      </div>
+    </footer>
+    
+  </body>
+  
+</html>
